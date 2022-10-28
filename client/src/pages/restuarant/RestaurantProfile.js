@@ -77,31 +77,13 @@ const RestaurantProfile = () => {
             </Fade>
 
             {/* -------------------tabs of the proffile------------------ */}
-            <Fade down cascade>
-                <CustomTabs
-                    value={value}
-                    onChange={changing}
-                    variant="fullWidth"
-                    TabIndicatorProps={{ sx: { background: Colours.green } }}
-                    aria-label="resturantProfile"
-                >
-                    <Tab icon={<HomeIcon sx={{ color: Colours.yellow }} />} label="HOME" value={0} />
-                    <Tab icon={<DashboardIcon sx={{ color: Colours.yellow }} />} label="DASHBOARD" value={1} />
-                    <Tab icon={<AccountBalanceWalletIcon sx={{ color: Colours.yellow }} />} label="INCOME" value={2} />
-                </CustomTabs>
-
-            </Fade>
+           
 
             <Box>
                 <RTabPanel value={value} index={0} >
                     <RestaurantHome />
                 </RTabPanel>
-                <RTabPanel value={value} index={1} >
-                    <RestaurantDashboard />
-                </RTabPanel>
-                <RTabPanel value={value} index={2} >
-                    <RestaurantIncome />
-                </RTabPanel>
+                
             </Box>
 
         </Box>

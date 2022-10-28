@@ -67,7 +67,7 @@ function Login() {
                   }}
                   >
                     <Slide right>
-                    Eat Healthily With
+                    Foods With
                     </Slide>
                     
                     <Slide left>

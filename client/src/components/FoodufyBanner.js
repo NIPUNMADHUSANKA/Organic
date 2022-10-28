@@ -35,7 +35,7 @@ function FoodufyBanner() {
                 }
               }}
             >
-              Healthy Foods
+              Organic Foods
             </Typography>
 
           </Zoom>

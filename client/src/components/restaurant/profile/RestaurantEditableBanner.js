@@ -359,50 +359,7 @@ const RestaurantEditableBanner = () => {
                         alignItems: "center",
                     }}>
 
-                        <Box sx={{
-                            width: "20%",
-                            margin: "auto",
-                        }}>
-                            <Button href='#' endIcon={<ArrowIcon fontSize="medium" sx={{
-                                [theme.breakpoints.down('sm')]: {
-                                    fontSize: '8px',
-                                },
-                            }} />} variant="contained" sx={{
-                                margin: '6px',
-                                background: Colours.yellow, '&:hover': {
-                                    backgroundColor: Colours.green,
-                                },
-                                color: Colours.dark,
-                                fontSize: '20px',
-                                hover: Colours.green,
-                                [theme.breakpoints.down('sm')]: {
-                                    fontSize: '8px',
-                                    padding: '2px',
-                                },
-                            }}>
-                                Offers
-                            </Button>
-                            <Button href='#' endIcon={<RestaurantMenuIcon fontSize="medium" sx={{
-                                [theme.breakpoints.down('sm')]: {
-                                    fontSize: '8px',
-                                },
-                            }} />} variant="contained" sx={{
-                                margin: '6px',
-                                background: Colours.darkgray, '&:hover': {
-                                    backgroundColor: Colours.grayWhite, color: Colours.dark,
-                                },
-                                color: Colours.grayWhite,
-                                fontSize: '20px',
-                                [theme.breakpoints.down('sm')]: {
-                                    fontSize: '8px',
-                                    padding: '2px',
-                                },
-                            }}>
-                                Menu
-                            </Button>
-
-
-                        </Box>
+                        
                     </Box>
 
                 </BannerContent>
@@ -416,16 +373,7 @@ const RestaurantEditableBanner = () => {
                             {RestaurantName.restaurant_name}
                         </BannerTitle>
 
-                        <BannerTitle2>
-                            Rating
-
-                        </BannerTitle2>
-                        <Rating name="rating" value={rating} precision={0.5} size="small" readOnly sx={{
-                            [theme.breakpoints.down('sm')]: {
-                                fontSize: '8px',
-                            },
-                        }} />
-
+                       
                     </BannerContent2>
                     {/* -------------------------------------------from2-------------------------------------- */}
                     {/* <BannerForm2 /> */}

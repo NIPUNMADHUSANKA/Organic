@@ -157,21 +157,11 @@ const Restaurant = () => {
         <RestaurantAbout AboutImage={AboutImage} details={details1} />
       </Fade>
 
-      <Fade right>
-        <RestaurantOffers rId={id} />
-      </Fade>
 
       <Fade bottom>
         <RestaurantMenu rId={id} />
       </Fade>
 
-      <Fade big>
-        <RestaurantComment rId={id} comments={Data2} />
-      </Fade>
-
-      <Fade left>
-        <RestaurantContact Map={Map} details={contactdetails1} />
-      </Fade>
 
     </Box>
   )

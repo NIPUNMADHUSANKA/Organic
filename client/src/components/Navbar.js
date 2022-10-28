@@ -347,43 +347,11 @@ export default function PrimarySearchAppBar() {
             {/*------------------------------END Without Resturants Have this option-------------------------------------------------*/}
 
 
-            {/*------------------------------START Only unregistered Have this option-------------------------------------------------*/}
-            {(() => {
-              if (ROLE === null) {
-                return (<Button component={Link} to='/' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> ABOUT US </Button>);
-              }
-            }
-            )()}
-
-            {(() => {
-              if (ROLE === null) {
-                return (<Button component={Link} to='/Explore' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> CONTACT US </Button>);
-              }
-            }
-            )()}
-            {/*------------------------------END Only unregistered Have this option-------------------------------------------------*/}
+            
 
 
-
-            {/*------------------------------START Only Resturants Have these option-------------------------------------------------*/}
-            {(() => {
-              if (ROLE === "restaurant") {
-                return (<Button component={Link} to='/RestaurantProfile' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> HOME </Button>);
-              }
-            }
-            )()}
-            {(() => {
-              if (ROLE === "restaurant") {
-                return (<Button component={Link} to='/AddFoodMenu' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> MENU </Button>);
-              }
-            }
-            )()}
-            {(() => {
-              if (ROLE === "restaurant") {
-                return (<Button component={Link} to='/Restaurant/AddOffers' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> OFFERS </Button>);
-              }
-            }
-            )()}
+           
+           
             {/*------------------------------END Only Resturants Have these option-------------------------------------------------*/}
 
 
@@ -403,19 +371,8 @@ export default function PrimarySearchAppBar() {
             {/*------------------------------END Only Premium Have these option-------------------------------------------------*/}
 
             {/*------------------------------START Only Registered user and Premium Have this option-------------------------------------------------*/}
-            {(() => {
-              if (ROLE === "User" || ROLE === "premiumUser") {
-                return (<Button component={Link} to='/PurchaseHistory' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> PURCHASE  </Button>);
-              }
-            }
-            )()}
-
-            {(() => {
-              if (ROLE === "User" || ROLE === "premiumUser") {
-                return (<Button component={Link} to='/Complaints' sx={{ my: 2, color: 'white', display: 'block', ml: 10 }}> COMPLAIN  </Button>);
-              }
-            }
-            )()}
+           
+           
             {/*------------------------------END Only Registered user and Premium Have this option-------------------------------------------------*/}
 
             {/*------------------------------START Only Registered user and Premium Have this option-------------------------------------------------*/}
@@ -445,61 +402,11 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
 
-            {/*------------------------------START Notification Icons-------------------------------------------------*/}
-            {(() => {
-              if (ROLE != null) {
-                return (<>
-                  <IconButton
-                      size="large"
-                      aria-label="show 1 new notifications"
-                      color="inherit"
-                      backgroundColor="#FFFFFF"
-                    >
-                      <Badge badgeContent={1} color="error">
-                        <NotificationsIcon aria-describedby={id} variant="contained" style={{ color:Colours.white }} onClick={handleClick} />
-                      </Badge>
-                    </IconButton>
-            
-                  <Popover
-             
-                    id={id}
-                    open={open}
-                    anchorEl={anchorEl}
-                    onClose={handleClose}
-                    anchorOrigin={{
-                      vertical: 'bottom',
-                      horizontal: 'left',
-                    }}
-            
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'left',
-                      }}
-                  >
-               <Box
-                 
-                >
-                  <FixedSizeList
-                    height={400}
-                    width={360}
-                    itemSize={106}
-                    itemCount={100}
-                    overscanCount={5}
-                  >
-                    {renderRow}
-                  </FixedSizeList>
-                </Box>
-                  </Popover>
-                </>);
-              }
-            }
-            )()}
-            {/*------------------------------END Notification Icons-------------------------------------------------*/}
-
+           
             {/*------------------------------START Only Registered user and Premium Have this option-------------------------------------------------*/}
             {/* -------------------------shopping cart------------------------- */}
             {(() => {
-              if (ROLE === "User" || ROLE === "premiumUser" || ROLE === "restaurant") {
+              if (ROLE === "User" || ROLE === "premiumUser") {
                 return (
                   <IconButton
                     sx={{ my: 2, color: 'white', display: 'block', ml: 1 }} onClick={toggleDrawer('right', true)}>
@@ -514,25 +421,6 @@ export default function PrimarySearchAppBar() {
 
             {/*------------------------------START User Icons-------------------------------------------------*/}
 
-            {(() => {
-              if (ROLE != null && ROLE != "admin" && ROLE != "restaurant") {
-                return (<IconButton
-                  size="large"
-                  edge="end"
-                  aria-label="account of current user"
-                  aria-controls={menuId}
-                  aria-haspopup="true"
-                  color="inherit"
-                  onClick={handleProfileMenuOpen}
-
-                  component={Link}
-                  to="/myProfile"
-                >
-                  <AccountCircle />
-                </IconButton>);
-              }
-            }
-            )()}
 
 
             {(() => {

@@ -29,11 +29,6 @@ function Landing() {
 
       </Fade>
 
-      <Fade left>
-        <Box mt="8%">
-          <AboutUs AboutImage={FOODIFY_ABOUTUS} details={details} />
-        </Box>
-      </Fade>
 
       <Fade right>
         <Box>

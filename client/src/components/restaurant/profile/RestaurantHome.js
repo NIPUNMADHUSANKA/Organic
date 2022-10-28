@@ -147,22 +147,14 @@ const RestaurantHome = () => {
         <EditAboutUs AboutImage={AboutImage} details={AboutUs !== null ? AboutUs : details} />
       </Fade>
 
-      <Fade right>
-        <RestaurantOffers />
-      </Fade>
+      
 
       <Fade bottom>
         <RestaurantMenu RestId = {RestId}/>
       </Fade>
 
-      <Fade big>
-        <RestaurantComment comments={Data2} />
-      </Fade>
-
-      <Fade left>
-        <RestaurantEditContact Map={Map} details={ContactDetails !== null ? ContactDetails : contactdetails} />
-      </Fade>
-
+      
+      
     </Box>
   )
 }

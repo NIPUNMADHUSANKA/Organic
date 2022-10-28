@@ -5,7 +5,6 @@ import ExploreF from '../components/explore/Explore.js';
 // import Tabs from '../components/explore/Tabs';
 import FoodScroll from '../components/explore/FoodScroll';
 import RestaurantScroll from '../components/explore/RestaurantScroll';
-import Nearme from '../components/explore/Nearme';
 import TabPanel from '../components/TabPanel';
 
 import theme from '../assets/theme/theme';
@@ -114,7 +113,7 @@ const Explore = () => {
                             <Typography color="primary" fontWeight="200" fontSize="18px">Restaurant</Typography>
                         } />
                     </Tabs>
-                    <Nearme />
+                  
                 </ThemeProvider>
             </Box >
             <Box minHeight="50vh">
