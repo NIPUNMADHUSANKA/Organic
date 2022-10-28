@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch BackendApplication",
+            "request": "launch",
+            "mainClass": "BackendApplication",
+            "projectName": "Backend"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BackendApplication<Backend>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "Foodify.Backend.BackendApplication",
+            "projectName": "Backend",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
